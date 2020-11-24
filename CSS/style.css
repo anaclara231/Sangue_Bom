@@ -1,10 +1,17 @@
 .myPage {
     line-height: 1.8;
     margin: 0%;
+    background-color: #F4F4F4;
+}
+
+body {
+    background-color: #F4F4F4;
+    font-family: 'Nunito', sans-serif;
 }
 
 .jumbotron {
     width: 100%;
+    background-image: url("IMG/bola.gif");
     background-color: #D61010;
     margin: 0%;
 }
@@ -12,6 +19,20 @@
 .div1 {
     width: 100%;
     margin: 0%;
+    background-color: #D61010;
+}
+
+.luizinho {
+    float: right;
+    background: #ffffff;
+    border-radius: 50%;
+    border: 1px white;
+    padding: 2%;
+    width: 250px;
+    height: 250px;
+    margin-left: 3%;
+    margin-top: 10%;
+    margin-right: 3%;
 }
 
 .div2 {
@@ -25,17 +46,32 @@
     padding-top: 5%;
 }
 
+.panel {
+    padding-top: 2%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .navbar {
     background-color: #D61010;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     margin: 0%;
+    border: 1px #D61010;
 }
 
 #menulink {
     color: white;
     margin-right: 80px;
     letter-spacing: 0.02em;
-    font-size: 15pt;
+    font-size: 13pt;
+    margin-top: 3%;
+}
+
+#menulink1 {
+    color: white;
+    margin-right: 80px;
+    letter-spacing: 0.02em;
+    font-size: 13pt;
+    bottom: 5%;
 }
 
 #titulo1 {
@@ -63,12 +99,32 @@
     border: 2px #D61010;
     color: #D61010;
     transition-duration: 0.4s;
-    cursor: pointer;
     text-decoration: none;
-    display: inline-block;
+    margin-right: 17%;
+    margin-top: 2%;
 }
 
 .button2:hover {
+    border: 2px solid #D61010;
+    background-color: #d8d8d8;
+    color: #D61010;
+}
+
+.button1 {
+    width: 170px;
+    height: 35px;
+    border-radius: 28px;
+    background: #D61010;
+    border: 1px solid white;
+    color: white;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 2%;
+}
+
+.button1:hover {
     border: 2px solid #D61010;
     background-color: #d8d8d8;
     color: #D61010;
@@ -219,4 +275,61 @@
     text-align: center;
     color: #444444;
     padding: 2%;
+}
+
+
+/* Linha do tempo */
+
+
+/* Sobre */
+
+.divsobre {
+    width: 100%;
+    background: #ffffff;
+    height: auto;
+}
+
+#card1 {
+    max-width: 50%;
+    margin-left: 20%;
+    background: #FAFAFA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.textosobre {
+    text-align: justify;
+    width: 95%;
+    font-size: 13pt;
+}
+
+#card2 {
+    max-width: 50%;
+    margin-left: 20%;
+    background: #FAFAFA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    float: right;
+}
+
+.divso {
+    max-width: 50%;
+    margin-left: 25%;
+    background: #FAFAFA;
+    box-shadow: 0px 4px 4px rgba(0.25, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.divcontato {
+    width: 100%;
+    background: #F4F4F4;
+    height: auto;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+.divforms {
+    width: 30%;
+    float: right;
 }
