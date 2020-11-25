@@ -78,7 +78,7 @@
     width: 180px;
     height: 30px;
     border-radius: 28px;
-    background: #dd1a1a;
+    background: #D61010;
     border: 2px white;
     color: white;
     transition-duration: 0.4s;
@@ -240,3 +240,5 @@
     color: #444444;
     padding: 2%;
 }
+
+.form-group {}
