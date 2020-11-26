@@ -55,6 +55,10 @@ body {
     margin: 0%;
 }
 
+.div2 {
+    animation: go-back 3s;
+}
+
 .row {
     width: 80%;
     padding-top: 5%;
@@ -213,7 +217,7 @@ body {
     content: '';
     position: absolute;
     width: 2px;
-    background-color: rgba(116, 116, 116, 0.521);
+    background-color: rgb(160, 160, 160);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -279,7 +283,7 @@ body {
 }
 
 .contentime {
-    padding: 15px 20px;
+    padding: 15px 25px;
     background-color: white;
     position: relative;
     border-radius: 3px;
