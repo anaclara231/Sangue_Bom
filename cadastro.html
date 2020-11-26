@@ -9,7 +9,7 @@
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
     <div class="container">
-        <form>
+        <form method="POST" action="php/enviadados.php">
             <!--dados user-->
             <div class="form-row">
                 <div class="form-group">
@@ -31,25 +31,43 @@
             </div>
             <div class="form-group col-md-6">
                 <label for="inputEmail4">CPF</label>
-                <input type="email" class="form-control" id="CPF" name="CPF">
+                <input type="text" class="form-control" id="CPF" name="CPF">
             </div>
             <div class="form-group col-md-6">
                 <label for="inputPassword4">RG</label>
-                <input type="password" class="form-control" id="RG" name="RG">
+                <input type="text" class="form-control" id="RG" name="RG">
             </div>
             <div class="form-group col-md-4">
                 <label for="inputEstado">Tipo de sangue</label>
                 <select id="ID_SANGUE" name="ID_SANGUE" class="form-control">
-                  <option selected>Escolher...</option>
-                  <option>...</option>
+                  <option selected>Escolher</option>
+                  <option>Ainda não sei</option>
+                  <option value="1">A+</option>
+                  <option value="2">A-</option>
+                  <option value="3">B+</option>
+                  <option value="4">B-</option>
+                  <option value="5">AB+</option>
+                  <option value="6">O+</option>
+                  <option value="7">O-</option>
                 </select>
             </div>
     </div>
     <div class="form-group">
         <label for="inputAddress2">Data de nascimento</label>
-        <input type="text" class="form-control" id="DATA_NASCIMENTO" name="DATA_NASCIMENTO">
+        <input type="date" class="form-control" id="DATA_NASCIMENTO" name="DATA_NASCIMENTO">
     </div>
+    <div class="form-group col-md-4">
+        <label for="inputEstado">Sexo</label>
+        <select id="SEXO" name="SEXO" class="form-control">
+          <option value="0" selected>Escolher</option>
+          <option value="m">Masculino</option>
+          <option value="f">Feminino</option>
+          <option value="o">Outro</option>
+        </select>
+    </div>
+    
     <!--dados user endereço-->
+    
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="inputCity">Cidade</label>
