@@ -1,93 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+
 <head>
     <title>Sangue Bom </title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/stylecadastro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap" rel="stylesheet">
 </head>
 
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <div class="divmenu">
+        <a class="navbar-brand" href="#myPage"><img src="img/logo.png" height="45px" width="40px" style="padding-bottom: 30%;"></a>
+    </div>
     <div class="container">
-        <form>
-            <!--dados user-->
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="inputAddress2">Nome</label>
-                    <input type="text" class="form-control" id="NOME_USUARIO" name="NOME_USUARIO">
+        <h2>CADASTRO</h2>
+        <br>
+        <form action="#" method="post">
+            <fieldset>
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="NOME_USUARIO" name="NOME_USUARIO" style="width: 10em" value="">
+                    </div>
+                    <div class="campo">
+                        <label for="snome">Sobrenome</label>
+                        <input type="text" id="SOBRENOME_USUARIO" name="SOBRENOME_USUARIO" style="width: 10em" value="">
+                    </div>
+                </fieldset>
+                <div class="campo">
+                    <label>Sexo</label>
+                    <label>
+                    <input type="radio" name="sexo" value="masculino"> Masculino
+                    <input type="radio" name="sexo" value="feminino"> Feminino
+                </label>
                 </div>
-                <div class="form-group">
-                    <label for="inputAddress2">Sobrenome</label>
-                    <input type="text" class="form-control" id="SOBRENOME_USUARIO" name="SOBRENOME_USUARIO">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputEmail">Email</label>
-                    <input type="email" class="form-control" id="EMAIL_USUARIO" name="EMAIL_USUARIO">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputPassword4">Senha</label>
-                    <input type="password" class="form-control" id="SENHA_USUARIO" name="SENHA_USUARIO">
-                </div>
-            </div>
-            <div class="form-group col-md-6">
-                <label for="inputEmail4">CPF</label>
-                <input type="email" class="form-control" id="CPF" name="CPF">
-            </div>
-            <div class="form-group col-md-6">
-                <label for="inputPassword4">RG</label>
-                <input type="password" class="form-control" id="RG" name="RG">
-            </div>
-            <div class="form-group col-md-4">
-                <label for="inputEstado">Tipo de sangue</label>
-                <select id="ID_SANGUE" name="ID_SANGUE" class="form-control">
-                  <option selected>Escolher...</option>
-                  <option>...</option>
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="nome">CPF</label>
+                        <input type="text" id="CPF" name="CPF" style="width: 10em" value="">
+                    </div>
+                    <div class="campo">
+                        <label for="snome">RG</label>
+                        <input type="text" id="RG" name="RG" style="width: 10em" value="">
+                    </div>
+                </fieldset>
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="estado">Data </label>
+                        <input type="date" class="form-control" id="DATA_NASCIMENTO" name="DATA_NASCIMENTO">
+                    </div>
+                    <div class="campo">
+                        <label for="estado">Tipo de Sangue</label>
+                        <select name="SANGUE" id="SANGUE">
+                    <option value="">--</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
                 </select>
-            </div>
-    </div>
-    <div class="form-group">
-        <label for="inputAddress2">Data de nascimento</label>
-        <input type="text" class="form-control" id="DATA_NASCIMENTO" name="DATA_NASCIMENTO">
-    </div>
-    <!--dados user endereço-->
-    <div class="form-row">
-        <div class="form-group col-md-6">
-            <label for="inputCity">Cidade</label>
-            <input type="text" class="form-control" id="CIDADE" name="CIDADE">
-        </div>
-        <div class="form-group col-md-4">
-            <label for="inputEstado">Estado</label>
-            <select id="inputEstado" name="ESTADO" class="ESTADO">
-              <option selected>Escolher...</option>
-              <option>...</option>
-            </select>
-        </div>
-        <div class="form-group col-md-2">
-            <label for="inputCEP">CEP</label>
-            <input type="text" class="form-control" id="CEP" name="CEP">
-        </div>
-        <div class="form-group col-md-2">
-            <label for="inputCEP">BAIRRO</label>
-            <input type="text" class="form-control" id="BAIRRO" name="BAIRRO">
-        </div>
-        <div class="form-group col-md-2">
-            <label for="inputCEP">RUA</label>
-            <input type="text" class="form-control" id="RUA" name="RUA">
-        </div>
-        <div class="form-group col-md-2">
-            <label for="inputCEP">NUMERO</label>
-            <input type="text" class="form-control" id="NUMERO" name="NUMERO">
-        </div>
-        <!--dados user endereço-->
-        <div class="form-group col-md-2">
-            <label for="inputCEP">TELEFONE</label>
-            <input type="text" class="form-control" id="NUM_TELEFONE" name="NUM_TELEFONE">
-        </div>
-    </div>
+                    </div>
+                </fieldset>
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="EMAIL_USUARIO" name="EMAIL_USUARIO" style="width: 20em" value="">
+                </div>
+                <div class="campo">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" id="NUM_TELEFONE" name="NUM_TELEFONE" style="width: 20em" value="">
+                </div>
 
-    <button type="submit" class="btn btn-primary">Entrar</button>
-    </form>
-    </div>
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="CIDADE" name="CIDADE" style="width: 10em" value="">
+                    </div>
+                    <div class="campo">
+                        <label for="estado">Estado</label>
+                        <select id="ESTADO" name="ESTADO">
+                        <option value="">--</option>
+                        <option value="SP">SP</option>
+                        <option value="RJ">RJ</option>
+                    </select>
+                    </div>
+                </fieldset>
+
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="nome">CEP</label>
+                        <input type="text" id="CEP" name="CEP" style="width: 10em" value="">
+                    </div>
+                    <div class="campo">
+                        <label for="snome">Bairro</label>
+                        <input type="text" id="BAIRRO" name="BAIRRO" style="width: 10em" value="">
+                    </div>
+                </fieldset>
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="nome">Rua</label>
+                        <input type="text" id="RUA" name="RUA" style="width: 10em" value="">
+                    </div>
+                    <div class="campo">
+                        <label for="snome">Numero</label>
+                        <input type="text" id="NUMERO" name="NUMERO" style="width: 10em" value="">
+                    </div>
+                </fieldset>
+                <div class="campo">
+                    <label for="password">Senha</label>
+                    <input type="password" id="SENHA_USUARIO" name="SENHA_USUARIO" style="width: 20em" value="">
+                </div>
+
+                <button class="button2" type="submit" name="submit">Enviar</button>
+            </fieldset>
+        </form>
+
+        <table>
+            <tr>
+
+            </tr>
+        </table>
 </body>
 
 </html>
