@@ -47,20 +47,20 @@ $registro = mysqli_fetch_array($resultadoSelect);
 
 $idUsuario = $registro[0];
 
-$inserteLogin = "INSERT INTO tbl_login_usuario(id_usuario, email_usuario, senha_usuario) 
+$insertLogin = "INSERT INTO tbl_login_usuario(id_usuario, email_usuario, senha_usuario) 
 VALUES('$idUsuario', '$email', '$senha' )";
 
-$resultadoInsert=mysqli_query($strcon, $inserteLogin) or die ("Erro no retorno de dados");
+$resultadoInsert=mysqli_query($strcon, $insertLogin) or die ("Erro no retorno de dados");
 
-$inserteEndereco = "INSERT INTO tbl_endereco_usuario(id_usuario, cep, estado, cidade, rua, numero)  
+$insertEndereco = "INSERT INTO tbl_endereco_usuario(id_usuario, cep, estado, cidade, rua, numero)  
 VALUES('$idUsuario', '$cep', '$estado', '$cidade', '$rua', '$numero' )";
 
-$resultadoInsert2=mysqli_query($strcon, $inserteEndereco) or die ("Erro no retorno de dados");
+$resultadoInsert2=mysqli_query($strcon, $insertEndereco) or die ("Erro no retorno de dados");
 
-$inserteEndereco = "INSERT INTO tbl_endereco_usuario(id_usuario, cep, estado, cidade, bairro, rua, numero)  
-VALUES('$idUsuario', '$cep', '$estado', '$cidade', '$bairro', '$rua', '$numero')";
+$insertTelefone = "INSERT INTO tbl_contato_usuario(id_usuario, telefone_usuario, id_tipo_telefone)  
+VALUES('$idUsuario','$telefone', 1)";
 
-$resultadoInsert2=mysqli_query($strcon, $inserteEndereco) or die ("Erro no retorno de dados");
+$resultadoInsert3=mysqli_query($strcon, $insertTelefone) or die ("Erro no retorno de dados");
 
 
 }
