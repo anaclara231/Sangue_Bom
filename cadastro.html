@@ -5,10 +5,71 @@
 <head>
     <title>Sangue Bom </title>
     <meta charset="utf-8">
+    
     <link rel="stylesheet" href="CSS/stylecadastro.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap" rel="stylesheet">
-</head>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script>  $(document).ready(function() {
+
+        function limpa_formulário_cep() {
+            // Limpa valores do formulário de cep.
+            $("#RUA").val("");
+            $("#BAIRRO").val("");
+            $("#CIDADE").val("");
+            $("#ESTADO").val("");
+            //$("#ibge").val("");
+        }
+        //Quando o campo cep perde o foco.
+        $("#CEP").blur(function() {
+        //Nova variável "cep" somente com dígitos.
+            var cep = $(this).val().replace(/\D/g, '');
+        //Verifica se campo cep possui valor informado.
+            if (cep != "") {
+         //Expressão regular para validar o CEP.
+                var validacep = /^[0-9]{8}$/;
+        //Valida o formato do CEP.
+                if(validacep.test(cep)) {
+             //Preenche os campos com "..." enquanto consulta webservice.
+                    $("#RUA").val("...");
+                    $("#BAIRRO").val("...");
+                    $("#CIDADE").val("...");
+                    $("#ESTADO").val("...");
+                    //$("#ibge").val("...");
+            //Consulta o webservice viacep.com.br/
+                    $.getJSON("https://viacep.com.br/ws/"+ cep +"/json/?callback=?", function(dados) {
+
+                        if (!("erro" in dados)) {
+                            //Atualiza os campos com os valores da consulta.
+                            $("#RUA").val(dados.logradouro);
+                            $("#BAIRRO").val(dados.bairro);
+                            $("#CIDADE").val(dados.localidade);
+                            $("#ESTADO").val(dados.uf);
+                            //$("#ibge").val(dados.ibge);
+                        } 
+                        else {
+                        limpa_formulário_cep();
+                        alert("CEP não encontrado.");
+                        }
+                    });
+                } 
+                else {
+                    limpa_formulário_cep();
+                    alert("Formato de CEP inválido.");
+                }
+            } 
+            else {
+                limpa_formulário_cep();
+            }
+        });
+    });
+</script>
+
+
+
+</head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
     <div class="divmenu">
@@ -17,16 +78,16 @@
     <div class="container">
         <h2>CADASTRO</h2>
         <br>
-        <form action="php/enviadados.php" method="post">
+        <form action="php/enviadados.php" method="post" id="formCadastrar" onsubmit="return validarLogin();">
             <fieldset>
                 <fieldset class="grupo">
                     <div class="campo">
                         <label for="nome">Nome</label>
-                        <input type="text" id="NOME_USUARIO" name="NOME_USUARIO" style="width: 10em" value="">
+                        <input type="text" id="NOME_USUARIO" name="NOME_USUARIO" style="width: 10em">
                     </div>
                     <div class="campo">
                         <label for="snome">Sobrenome</label>
-                        <input type="text" id="SOBRENOME_USUARIO" name="SOBRENOME_USUARIO" style="width: 10em" value="">
+                        <input type="text" id="SOBRENOME_USUARIO" name="SOBRENOME_USUARIO" style="width: 10em">
                     </div>
                 </fieldset>
                 <div class="campo">
@@ -40,11 +101,11 @@
                 <fieldset class="grupo">
                     <div class="campo">
                         <label for="nome">CPF</label>
-                        <input type="text" id="CPF" name="CPF" style="width: 10em" value="">
+                        <input type="text" id="CPF" name="CPF" style="width: 10em">
                     </div>
                     <div class="campo">
                         <label for="snome">RG</label>
-                        <input type="text" id="RG" name="RG" style="width: 10em" value="">
+                        <input type="text" id="RG" name="RG" style="width: 10em">
                     </div>
                 </fieldset>
                 <fieldset class="grupo">
@@ -69,17 +130,17 @@
                 </fieldset>
                 <div class="campo">
                     <label for="email">E-mail</label>
-                    <input type="text" id="EMAIL_USUARIO" name="EMAIL_USUARIO" style="width: 20em" value="">
+                    <input type="text" id="EMAIL_USUARIO" name="EMAIL_USUARIO" style="width: 20em">
                 </div>
                 <div class="campo">
                     <label for="telefone">Telefone</label>
-                    <input type="text" id="NUM_TELEFONE" name="NUM_TELEFONE" style="width: 20em" value="">
+                    <input type="text" id="NUM_TELEFONE" name="NUM_TELEFONE" style="width: 20em" >
                 </div>
 
                 <fieldset class="grupo">
                     <div class="campo">
                         <label for="cidade">Cidade</label>
-                        <input type="text" id="CIDADE" name="CIDADE" style="width: 10em" value="">
+                        <input type="text" id="CIDADE" name="CIDADE" style="width: 10em" >
                     </div>
                     <div class="campo">
                         <label for="estado">Estado</label>
@@ -87,37 +148,41 @@
                         <option value="">--</option>
                         <option value="SP">SP</option>
                         <option value="RJ">RJ</option>
-                    </select>
+                     </select>
                     </div>
                 </fieldset>
 
                 <fieldset class="grupo">
                     <div class="campo">
                         <label for="nome">CEP</label>
-                        <input type="text" id="CEP" name="CEP" style="width: 10em" value="">
+                        <input type="text" id="CEP" name="CEP" style="width: 10em">
                     </div>
                     <div class="campo">
                         <label for="snome">Bairro</label>
-                        <input type="text" id="BAIRRO" name="BAIRRO" style="width: 10em" value="">
+                        <input type="text" id="BAIRRO" name="BAIRRO" style="width: 10em">
                     </div>
                 </fieldset>
                 <fieldset class="grupo">
                     <div class="campo">
                         <label for="nome">Rua</label>
-                        <input type="text" id="RUA" name="RUA" style="width: 10em" value="">
+                        <input type="text" id="RUA" name="RUA" style="width: 10em">
                     </div>
                     <div class="campo">
                         <label for="snome">Numero</label>
-                        <input type="text" id="NUMERO" name="NUMERO" style="width: 10em" value="">
+                        <input type="text" id="NUMERO" name="NUMERO" style="width: 10em">
                     </div>
                 </fieldset>
                 <div class="campo">
                     <label for="password">Senha</label>
-                    <input type="password" id="SENHA_USUARIO" name="SENHA_USUARIO" style="width: 20em" value="">
+                    <input type="password" id="SENHA_USUARIO" name="SENHA_USUARIO" style="width: 20em">
+                    <label for="password">Senha</label>
+                    <input type="password" id="SENHA_USUARIO2" name="SENHA_USUARIO2" style="width: 20em">
+                    
                 </div>
 
-
-                <button class="button2" type="submit" name="submit">Cadastrar</button>
+                <div id="senhaErro" ></div>
+                
+                <button class="button2" name="submit" type="submit">Cadastrar</button>
             </fieldset>
         </form>
 
@@ -126,6 +191,11 @@
 
             </tr>
         </table>
+
+
+<script src="JS/validarSenha.js"></script>
+
+        
 </body>
 
 </html>

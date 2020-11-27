@@ -1,10 +1,12 @@
 <?php
+alert("ola")
 include_once('conexao.php');
 //capturando os dados da tabela usuario + login
 $nome=$_POST['NOME_USUARIO'];
 $sobrenome=$_POST['SOBRENOME_USUARIO'];
 $email=$_POST['EMAIL_USUARIO'];
 $senha=$_POST['SENHA_USUARIO'];
+$senha2=$_POST['SENHA_USUARIO2'];
 $cpf=$_POST['CPF'];
 $rg=$_POST['RG'];
 $id_sangue=$_POST['SANGUE'];
@@ -26,9 +28,12 @@ $bairro=$_POST['BAIRRO'];
 if(!$strcon){
     die("conexão falhou: ".mysqli_connect_error());
 }else{
-
+    if($senha == $senha2){ 
     $tblUsuario="INSERT INTO tbl_usuario (id_sangue, nome_usuario, sobrenome_usuario, sexo, cpf, rg, data_nascimento) VALUES ('$id_sangue','$nome', '$sobrenome', '$sexo', '$cpf','$rg', '$data_nascimento')";
     $resultadoInsert = mysqli_query($strcon, $tblUsuario);
+}else{
+    die("As senha não correspondem!".mysqli_close());
+}
 
 }
 if(!$resultadoInsert) {
