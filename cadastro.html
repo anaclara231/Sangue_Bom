@@ -5,15 +5,15 @@
 <head>
     <title>Sangue Bom </title>
     <meta charset="utf-8">
-    
     <link rel="stylesheet" href="CSS/stylecadastro.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap" rel="stylesheet">
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
 
+    <script src="https://cdnjs.com/libraries/jquery.mask"></script>
 
+   
 </head>
 
 
@@ -26,7 +26,6 @@
         <h2>CADASTRO</h2>
         <br>
 
-        <form action="php/enviadados.php" method="post">
 
         <form action="php/enviadados.php" method="post" id="formCadastrar" onsubmit="return validarLogin();">
 
@@ -52,11 +51,11 @@
                 <fieldset class="grupo">
                     <div class="campo">
                         <label for="nome">CPF</label>
-                        <input type="text" id="CPF" name="CPF" style="width: 10em">
+                        <input type="text" id="CPF" name="CPF" autocomplete="off" maxlength="14" onkeyup="mascara_cpf()" style="width: 10em">
                     </div>
                     <div class="campo">
                         <label for="snome">RG</label>
-                        <input type="text" id="RG" name="RG" style="width: 10em">
+                        <input type="text" id="RG" name="RG"   autocomplete="off" maxlength="12" onkeyup="mascara_rg()" style="width: 10em">
                     </div>
                 </fieldset>
                 <fieldset class="grupo">
@@ -85,7 +84,7 @@
                 </div>
                 <div class="campo">
                     <label for="telefone">Telefone</label>
-                    <input type="text" id="NUM_TELEFONE" name="NUM_TELEFONE" style="width: 20em" >
+                    <input type="text" id="NUM_TELEFONE" name="NUM_TELEFONE" autocomplete="off" maxlength="12" onkeyup="val()" style="width: 20em" >
                 </div>
                 <fieldset class="grupo">
                     <div class="campo">
@@ -96,9 +95,34 @@
                     <div class="campo">
                         <label for="estado">Estado</label>
                         <select id="ESTADO" name="ESTADO">
-                        <option value="">--</option>
-                        <option value="SP">SP</option>
-                        <option value="RJ">RJ</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="EX">Estrangeiro</option>
                      </select>
                     </div>
                 </fieldset>
@@ -116,11 +140,11 @@
                 <fieldset class="grupo">
                     <div class="campo">
                         <label for="nome">Rua</label>
-                        <input type="text" id="RUA" name="RUA" style="width: 10em">
+                        <input type="text" id="RUA" name="RUA" style="width: 16em">
                     </div>
                     <div class="campo">
                         <label for="snome">Numero</label>
-                        <input type="text" id="NUMERO" name="NUMERO" style="width: 10em">
+                        <input type="text" id="NUMERO" name="NUMERO" style="width: 4em">
                     </div>
                 </fieldset>
                 <div class="campo">
@@ -144,15 +168,9 @@
         </table>
 
 
-
-
-
-
-
-
-
-
-
+<script src="JS/jquery-3.5.1.min.js"></script>
+<script src="JS/jquery.mask.js"></script>
+<script src="JS/mascarasCampos.js"></script>
 <script src="JS/validarSenha.js"></script>
 <script src="JS/cep.js"></script>
 
