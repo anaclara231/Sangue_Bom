@@ -6,6 +6,9 @@
 fieldset {
     border: 0;
 }
+#senhaErro{
+    display: none;
+}
 
 .container {
     margin-top: 5%;
