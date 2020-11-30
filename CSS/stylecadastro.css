@@ -6,7 +6,8 @@
 fieldset {
     border: 0;
 }
-#senhaErro{
+
+#senhaErro {
     display: none;
 }
 

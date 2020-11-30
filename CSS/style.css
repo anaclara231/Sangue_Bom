@@ -92,21 +92,20 @@ body {
     bottom: 5%;
 }
 
-li:link,
-li:visited {
+#menulink:visited {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     letter-spacing: 0.02em;
     margin-top: 3%;
 }
 
-li:hover {
-    text-decoration: underline;
-    color: #f00
+#menulink:hover {
+    text-decoration: none;
+    color: #adadad;
 }
 
-li:active {
-    text-decoration: none
+#menulink:visited {
+    text-decoration: #D61010;
 }
 
 #titulo1 {
@@ -390,14 +389,34 @@ li:active {
 .divcontato {
     width: 100%;
     background: #F4F4F4;
-    height: auto;
+    height: 540px;
     padding-right: 20%;
     padding-left: 20%;
 }
 
-.divforms {
-    width: 30%;
+.formulariocont {
+    width: 50%;
     float: right;
+}
+
+@media screen and (max-width: 700px) {
+    .form-control {
+        padding-top: 10%;
+        width: 100%;
+        float: center;
+    }
+    .formulariocont {
+        padding-top: 10%;
+        width: 100%;
+    }
+    .divcontato {
+        height: 850px;
+    }
+}
+
+.form-control {
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .hr {
@@ -569,4 +588,64 @@ select option {
     color: #000;
     display: inline-block;
     margin-right: 1em;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo select,
+.campo data,
+.campo textarea {
+    padding: 0.2em;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+    width: 25%;
+}
+
+.redes {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    margin-bottom: 0%;
+}
+
+.insta {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background-color: #D61010;
+    border: 1px #D61010;
+    color: white;
+    margin: 2%;
+}
+
+.insta:hover {
+    color: black;
+    background-color: #d61010c9;
+}
+
+.imgredes {
+    width: 50%;
+    height: 50%;
+}
+
+@media screen and (max-width: 700px) {
+    .insta {
+        width: 50px;
+        height: 50px;
+    }
+    .imgredes {
+        width: 40%;
+        height: 40%;
+    }
+    .divso {
+        text-align: center;
+        padding: 5%;
+        align-items: center;
+    }
+    .bola {
+        margin: 0 auto;
+        margin-bottom: 15%;
+    }
 }
