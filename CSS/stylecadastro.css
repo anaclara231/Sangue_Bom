@@ -11,9 +11,17 @@ fieldset {
     display: none;
 }
 
+label {}
+
 .container {
     margin-top: 5%;
-    margin-left: 25%;
+    margin-left: 10%;
+    width: 70%;
+    height: 450px;
+    background-color: #ffffff;
+    border: solid 1px rgb(31, 31, 31);
+    padding: 5%;
+    border-radius: 30px;
 }
 
 body,
@@ -63,6 +71,8 @@ fieldset.grupo .campo {
     border: 1px solid #CCC;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     display: block;
+    width: 100%;
+    border-radius: 6px;
 }
 
 .campo select option {
@@ -107,7 +117,7 @@ label.checkbox {
 }
 
 .divmenu {
-    position: fixed;
+    position: absolute;
     width: 250.82px;
     height: 300.71px;
     left: -29.82px;
@@ -117,6 +127,17 @@ label.checkbox {
     transform: rotate(10.92deg);
 }
 
+<<<<<<< HEAD
+.part1 {
+    float: left;
+    width: 45%;
+}
+
+.part2 {
+    float: right;
+    width: 45%;
+=======
 #erroLogin {
     display: none;
+>>>>>>> b83bc1ab0ff7405b81a23bfe86a81fa2039e4966
 }
