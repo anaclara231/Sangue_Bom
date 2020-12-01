@@ -116,3 +116,7 @@ label.checkbox {
     border-radius: 44px;
     transform: rotate(10.92deg);
 }
+
+#erroLogin {
+    display: none;
+}
