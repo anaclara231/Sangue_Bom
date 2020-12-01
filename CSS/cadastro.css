@@ -2,7 +2,7 @@
     background-color: #D61010;
     width: 100%;
     height: 200px;
-    padding-top: 7%;
+    padding-top: 2%;
 }
 
 body {
@@ -86,4 +86,26 @@ fieldset.grupo .campo {
     border: 2px solid #D61010;
     background-color: #ffffff;
     color: #D61010;
+}
+
+.button2 {
+    width: 180px;
+    height: 30px;
+    border-radius: 28px;
+    background: #ffffff;
+    border: 1px solid #D61010;
+    color: #D61010;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    margin-top: 2%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button2:hover {
+    border: 2px solid #ffffff;
+    background-color: #D61010;
+    color: #ffffff;
 }
