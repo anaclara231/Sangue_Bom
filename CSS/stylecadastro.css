@@ -127,6 +127,7 @@ label.checkbox {
     transform: rotate(10.92deg);
 }
 
+<<<<<<< HEAD
 .part1 {
     float: left;
     width: 45%;
@@ -135,4 +136,8 @@ label.checkbox {
 .part2 {
     float: right;
     width: 45%;
+=======
+#erroLogin {
+    display: none;
+>>>>>>> b83bc1ab0ff7405b81a23bfe86a81fa2039e4966
 }
