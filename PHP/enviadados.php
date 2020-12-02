@@ -24,17 +24,14 @@ $rua=$_POST['RUA'];
 $numero=$_POST['NUMERO'];
 $bairro=$_POST['BAIRRO'];
 
+echo $nome;
+
+
 $cpfBanco = limpaCPF_CNPJ($cpf);
 $rgBanco = limpaCPF_CNPJ($rg);
 $telefoneBanco = limpaCPF_CNPJ($telefone);
 $cepBanco= limpaCPF_CNPJ($cep);
 
-$validacao = validaCPF($cpf);
-if($validacao) {
-    return true;
-}else {
-    return false;
-}
 
 if(!$strcon){
     die("conexão falhou: ".mysqli_connect_error());

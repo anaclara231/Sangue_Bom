@@ -31,6 +31,8 @@
         <div id="div1">
             <h1 class="titulo"> CADASTRO </h1>
             <hr style="width: 90%;">
+            <form action="php/enviadados.php" method="post" id="formCadastrar" onsubmit="return validarLogin();">
+
             <fieldset class="grupo">
                 <br>
                 <header class="campo">
@@ -177,9 +179,10 @@
                 </header>
             </fieldset>
             <br>
-            <a href="div1"><button class="button1" name="submit" >Voltar</button></a></li><br>
-            <a href=""> <button class="button1" name="submit" type="submit">Cadastro</button></a>
+            <a href="div1"><button class="button1" name="submit2" >Voltar</button></a></li><br>
+            <button class="button1" name="submit" type="submit">Cadastro</button>
         </div>
+    </form>
 
         <div id="senhaErro">As senhas não Correspondem!</div>
 
