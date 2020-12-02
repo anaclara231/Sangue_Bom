@@ -178,20 +178,20 @@
             <h1 id="titulocuri">Contato</h1>
             <br>
             <img src="IMG/luizinho3.png" style="float: left; width: 250px; height: 300px;">
-            <form class="formulariocont">
+            <form method="POST" action="PHP/email.php" class="formulariocont">
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">NOME</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                    <label for="exampleFormControlInput1">Nome</label>
+                    <input name="nome" type="text" class="form-control" id="exampleFormControlInput1" placeholder="luizinho">
                 </div>
                 <br>
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">EMAIL</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                    <label for="exampleFormControlInput1">Email</label>
+                    <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="sangue@bom.com">
                 </div>
                 <br>
                 <div class="form-group">
-                    <label for="exampleFormControlTextarea1"><p style="text-align: aling;">MENSAGEM</p></label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="exampleFormControlTextarea1"><p style="text-align: aling;">Mensagem</label>
+                    <textarea name="mensagem" class="form-control" id="exampleFormControlTextarea1" style="width: 200%; resize: none;" placeholder="Digite aqui sua mensagem" ></textarea>
                 </div><br>
                 <a id="menulink1" href="#login"><button class="button1" > Enviar </button></a>
             </form>
@@ -199,7 +199,7 @@
     </div>
     <div class="redes">
         <center>
-            <a id="insta" href="#"><button class="insta" ><img src="IMG/insta.png" class="imgredes" ></button></a>
+            <a id="insta" href="https://www.instagram.com/sangueebom/?hl=pt-br" target="_blank"><button class="insta" ><img src="IMG/insta.png" class="imgredes" ></button></a>
             <a id="insta" href="#"><button class="insta" ><img src="IMG/email.png" class="imgredes"></button></a>
             <a id="insta" href="#"><button class="insta" ><img src="IMG/face.png" class="imgredes"></button></a>
         </center>
