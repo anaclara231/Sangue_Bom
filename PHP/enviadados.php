@@ -24,21 +24,20 @@ $rua=$_POST['RUA'];
 $numero=$_POST['NUMERO'];
 $bairro=$_POST['BAIRRO'];
 
-echo $nome;
-
 
 $cpfBanco = limpaCPF_CNPJ($cpf);
 $rgBanco = limpaCPF_CNPJ($rg);
 $telefoneBanco = limpaCPF_CNPJ($telefone);
 $cepBanco= limpaCPF_CNPJ($cep);
 
+$cpfvalidacao = validaCPF($cpf);
+
+echo $cpfvalidacao;
 
 if(!$strcon){
     die("conexão falhou: ".mysqli_connect_error());
 }else{
 
-    $tblUsuario="INSERT INTO tbl_usuario (id_sangue, nome_usuario, sobrenome_usuario, sexo, cpf, rg, data_nascimento) VALUES ('$id_sangue','$nome', '$sobrenome', '$sexo', '$cpfBanco','$rgBanco', '$data_nascimento')";
-    $resultadoInsert = mysqli_query($strcon, $tblUsuario);
 
     if($senha == $senha2){ 
     $tblUsuario="INSERT INTO tbl_usuario (id_sangue, nome_usuario, sobrenome_usuario, sexo, cpf, rg, data_nascimento) VALUES ('$id_sangue','$nome', '$sobrenome', '$sexo', '$cpfBanco','$rgBanco', '$data_nascimento')";
