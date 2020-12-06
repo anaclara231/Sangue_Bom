@@ -24,15 +24,28 @@ $rua=$_POST['RUA'];
 $numero=$_POST['NUMERO'];
 $bairro=$_POST['BAIRRO'];
 
-
 $cpfBanco = limpaCPF_CNPJ($cpf);
 $rgBanco = limpaCPF_CNPJ($rg);
 $telefoneBanco = limpaCPF_CNPJ($telefone);
 $cepBanco= limpaCPF_CNPJ($cep);
 
-$cpfvalidacao = validaCPF($cpf);
+// verificando se o usuario ou email já existe // 
+ 
+$emailVerify = "SELECT email_usuario from tbl_login_usuario where email_usuario = '$email'";
 
-echo $cpfvalidacao;
+$cpfVerify = "SELECT cpf from tbl_usuario where cpf = '$cpfBanco'";
+
+$selectVerify = mysqli_query($strcon, $emailVerify);
+
+$Verify = mysqli_fetch_array($selectVerify);
+
+if($Verify) {
+    echo "O email".$Verify[0]."já existe!" and die;
+}else{
+    echo "email disponivel";
+}
+
+
 
 if(!$strcon){
     die("conexão falhou: ".mysqli_connect_error());
@@ -76,7 +89,9 @@ VALUES('$idUsuario','$telefoneBanco', 1)";
 
 $resultadoInsert3=mysqli_query($strcon, $insertTelefone) or die ("Erro no retorno de dados3");
 
-
+echo "<script>
+window.location.href='../login.html'
+</script>";
 }
 
 ?>
