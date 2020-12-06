@@ -50,16 +50,17 @@
                 <label>
                     <input type="radio" name="SEXO" value="m" required> Masculino
                     <input type="radio" name="SEXO" value="f" required> Feminino
+                    <input type="radio" name="SEXO" value="o" required> Outro
                 </label>
                 <br>
             </header>
             <header class="campo">
                 <label for="nome">CPF</label>
-                <input type="text" id="CPF" name="CPF" autocomplete="off" maxlength="14" onkeyup="mascara_cpf()" required>
+                <input type="text" id="CPF" name="CPF" autocomplete="off" maxlength="14" required>
             </header>
             <header class="campo">
                 <label for="snome">RG</label>
-                <input type="text" id="RG" name="RG" autocomplete="off" maxlength="12" onkeyup="mascara_rg()" required>
+                <input type="text" id="RG" name="RG" autocomplete="off" maxlength="12" onkeyup="mascara_rg()">
             </header>
             <br>
             <fieldset class="grupo">
@@ -97,7 +98,7 @@
             <fieldset class="grupo" style="width: 100%;">
                 <header class="campo">
                     <label for="nome">CEP</label>
-                    <input type="text" id="CEP" name="CEP" required>
+                    <input type="text" id="CEP" name="CEP">
                 </header>
 
                 <header class="campo">
@@ -191,6 +192,15 @@
 
         <script src="JS/jquery-3.5.1.min.js"></script>
         <script src="JS/jquery.mask.js"></script>
+        <script>
+        $(document).ready(function(){
+        $('#CPF').mask('000.000.000-00', {reverse: false});
+        $('#CEP').mask('00000-000');
+    
+    })
+
+
+        </script>
         <script src="JS/validaData.js"></script>
         <script src="JS/mascarasCampos.js"></script>
         <script src="JS/validarSenha.js"></script>

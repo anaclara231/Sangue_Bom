@@ -29,35 +29,45 @@ $rgBanco = limpaCPF_CNPJ($rg);
 $telefoneBanco = limpaCPF_CNPJ($telefone);
 $cepBanco= limpaCPF_CNPJ($cep);
 
-// verificando se o usuario ou email já existe // 
+// verificando se o cpf ou email já está cadastrado // 
  
 $emailVerify = "SELECT email_usuario from tbl_login_usuario where email_usuario = '$email'";
-
 $cpfVerify = "SELECT cpf from tbl_usuario where cpf = '$cpfBanco'";
 
-$selectVerify = mysqli_query($strcon, $emailVerify);
+// efetuando a consulta no banco de dadaos // 
 
-$Verify = mysqli_fetch_array($selectVerify);
+$selectVerify1 = mysqli_query($strcon, $emailVerify);
+$selectVerify2 = mysqli_query($strcon, $cpfVerify);
 
-if($Verify) {
-    echo "O email".$Verify[0]."já existe!" and die;
+// efetuando a consulta no banco de dadaos // 
+$verifyEmail= mysqli_fetch_array($selectVerify1);
+$verifyCPF= mysqli_fetch_array($selectVerify2);
+
+// Se já existir algum dos dados, retornar mensagem de erro. Caso contrário, cadastrar o usuario // 
+if($verifyEmail) {
+    die("O email".$verifyEmail[0]."já existe!");
 }else{
-    echo "email disponivel";
+    $emailIsValid = true;
+}
+if($VerifyCPF) {
+    die("O cpf".$verifyCPF[0]."já existe!");
+}else{
+    $cpfIsValid = true;
 }
 
+if ($cpfIsValid and $emailIsValid){
 
-
-if(!$strcon){
-    die("conexão falhou: ".mysqli_connect_error());
-}else{
+    if(!$strcon){
+        die("conexão falhou: ".mysqli_connect_error());
+        }else{
 
 
     if($senha == $senha2){ 
     $tblUsuario="INSERT INTO tbl_usuario (id_sangue, nome_usuario, sobrenome_usuario, sexo, cpf, rg, data_nascimento) VALUES ('$id_sangue','$nome', '$sobrenome', '$sexo', '$cpfBanco','$rgBanco', '$data_nascimento')";
     $resultadoInsert = mysqli_query($strcon, $tblUsuario);
-}else{
-    die("As senha não correspondem!".mysqli_close());
-}
+    }else{
+        die("As senha não correspondem!".mysqli_close());
+        }
 
 
 }
@@ -93,5 +103,6 @@ echo "<script>
 window.location.href='../login.html'
 </script>";
 }
-
+}else echo "CPF ou Email nao validado.";
+    mysqli_close($strcon);
 ?>
