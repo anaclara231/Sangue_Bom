@@ -637,7 +637,7 @@ select option {
     height: 50%;
 }
 
-@media screen and (max-width: 700px) {
+@media (max-width: 700px) {
     .insta {
         width: 50px;
         height: 50px;
@@ -673,14 +673,14 @@ select option {
         font-size: 14px;
     }
     .bola1 {
-        margin-left: 22%;
+        margin-left: 10%;
         margin-bottom: 15%;
         align-items: center;
         display: flex;
         justify-content: center;
         text-align: center;}
     .bola2 {
-        margin-left: 15%;
+        margin-left: 30%;
         margin-bottom: 15%;
         align-items: center;
         display: flex;
@@ -691,7 +691,7 @@ select option {
     margin-left: 15%;
 }
 .button2{
-    margin-left: 15%;
+    margin-left: 23%;
 }
 .button3{
     margin-left: 15%;
@@ -739,4 +739,75 @@ select option {
 .insta{
 margin-left: 20px;
 }
+ @media (max-height: 500px){
+    .button1{
+        margin-left: 15%;
+    }
+    .button2{
+        margin-left: 10%;
+    }
+    .button3{
+        margin-left: 15%;
+
+}  .bola1 {
+        margin-right: 30%;
+        margin-bottom: 15%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;}
+    .bola2 {
+        margin-left: 1%;
+        margin-bottom: 15%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+}} @media (max-height: 900px){
+    .button1{
+        margin-left: 27%;
+    }
+    .button2{
+        margin-left: 29%;
+    }
+    .button3{
+        margin-left: 15%;
+
+}  .bola1 {
+        width: 14rem;
+        height: 14rem;
+        margin-left: 33%;
+        margin-bottom: 15%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;}
+    .bola2 {
+        width: 14rem;
+        height: 14rem;
+        margin-left: 25%;
+        margin-bottom: 15%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;
 }
+.insta{
+    margin-left: 11%;
+
+    }
+.form-control{
+    padding-top: 2%;
+    /* padding-bottom: 10%; */
+}
+.luizinho2{
+    margin-left: 20%;
+}
+.ods{
+    margin-top: 60%;
+    margin-left: 30%;
+    margin-right: 40%;
+    margin-bottom: 10%;
+    font-size: 14px;
+    text-align: center;
+}}}
