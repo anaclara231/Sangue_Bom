@@ -1,18 +1,13 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
 
 <head>
-    <?php
-$resposta = '';
-    session_start();
+
     
-    $email = $_SESSION['emailusuario'];
-    if(!$email){
-        $resposta = 'Usuario e senha errados!';
-    };
-        session_destroy();
-    ?>
     <title>Login </title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="CSS/cadastro.css">
@@ -41,12 +36,14 @@ $resposta = '';
                     <label for="password">Senha</label>
                     <input type="password" id="SENHA_USUARIO" name="SENHA_USUARIO">
                 </header>
-       
-                <p><?php 
-                
-                echo $resposta;
-                
-                ?></p>
+
+                <?php
+                if(isset($_SESSION['msg'])){
+                echo $_SESSION['msg'];
+                unset($_SESSION['msg']);
+                }
+                ?>
+
                 <button class="button1" name="submit" type="submit">Entrar</button>
                 <h4 style="text-align: center;"> OU </h4>
                 <a href="cadastro.html"><button class="button2" name="submit" type="submit">Cadastre-se</button></a>
