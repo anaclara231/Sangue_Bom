@@ -11,7 +11,7 @@ $resposta = '';
     if(!$email){
         $resposta = 'Usuario e senha errados!';
     };
-
+        session_destroy();
     ?>
     <title>Login </title>
     <meta charset="utf-8">
