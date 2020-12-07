@@ -3,6 +3,16 @@
 
 
 <head>
+    <?php
+$resposta = '';
+    session_start();
+    
+    $email = $_SESSION['emailusuario'];
+    if(!$email){
+        $resposta = 'Usuario e senha errados!';
+    };
+
+    ?>
     <title>Login </title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="CSS/cadastro.css">
@@ -31,8 +41,12 @@
                     <label for="password">Senha</label>
                     <input type="password" id="SENHA_USUARIO" name="SENHA_USUARIO">
                 </header>
-                <input type="radio" name="SEXO" value="m"> Quero ser lembrado
-                <br><br>
+       
+                <p><?php 
+                
+                echo $resposta;
+                
+                ?></p>
                 <button class="button1" name="submit" type="submit">Entrar</button>
                 <h4 style="text-align: center;"> OU </h4>
                 <a href="cadastro.html"><button class="button2" name="submit" type="submit">Cadastre-se</button></a>

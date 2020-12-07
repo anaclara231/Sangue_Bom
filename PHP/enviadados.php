@@ -43,6 +43,10 @@ $selectVerify2 = mysqli_query($strcon, $cpfVerify);
 $verifyEmail= mysqli_fetch_array($selectVerify1);
 $verifyCPF= mysqli_fetch_array($selectVerify2);
 
+session_start();
+$_SESSION['verificacaocpf'] = $verifyCPF['cpf'];
+
+
 // Se já existir algum dos dados, retornar mensagem de erro. Caso contrário, cadastrar o usuario // 
 if($verifyEmail) {
     die("O email".$verifyEmail[0]."já existe!");

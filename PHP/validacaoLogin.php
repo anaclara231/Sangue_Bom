@@ -8,18 +8,29 @@ $validacaoLogin =  "SELECT * FROM tbl_login_usuario WHERE email_usuario = '$emai
 
 $resultadovalidacao=mysqli_query($strcon, $validacaoLogin);
 $resultado = mysqli_fetch_array($resultadovalidacao);
-
-mysqli_close($strcon);
+session_start();
+$_SESSION['emailusuario'] = $resultado['email_usuario'];
+$_SESSION['senhausuario'] = $resultado['senha_usuario'];
 
 if ($resultado){
-    echo "<script>
-window.location.href='../dashboard.html'
-</script>";
+ 
+   header('location:../dashboard.php');
+
 }else{
-echo"
-<script>
-window.location.href='../login.html'
-</script>";
+    header('location:../login.php');
+  
 }
+
+
+
+$_SESSION['idusuario']=$resultado['id_usuario'];
+$idpesquisa = $_SESSION['idusuario'];
+$pesquisadados = "SELECT * FROM tbl_usuario WHERE id_usuario = '$idpesquisa'";
+
+$resultadopesquisa=mysqli_query($strcon, $pesquisadados);
+$pesquisa = mysqli_fetch_array($resultadopesquisa);
+
+
+
 
 ?>

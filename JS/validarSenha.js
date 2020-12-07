@@ -16,15 +16,6 @@ function validarLogin(){
     }      
     
  }
- function validarLogin(){
-    var cpf = document.getElementById('CPF').value
-
-    if(cpf != 14){
-        document.getElementById('cpfInvalido').style.display='block';
-        return false
-    }else{
-        document.getElementById('cpfInvalido').style.display='none';
-        return true
-    }
- }
+    
+ 
 

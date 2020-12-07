@@ -41,7 +41,9 @@
 
         <div class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">
             <img src="IMG/logo.png" width="25%" height="75%" style="float: left; padding-top: 5%; padding-right: 3%;">
-            <h3 style="color: white;">SANGUE <br> BOM</h3>
+            <h3 id="testephp" style="color: white;">SANGUE <br> BOM
+        
+            </h3>
         </div>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -132,6 +134,7 @@
                         <div class="card-body">
                             <h5 class="card-title">ATUALIZAÇÃO</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            
                         </div>
                     </div>
                 </div>
@@ -158,6 +161,8 @@
     </div>
     </main>
 
+    <p>oiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script>
@@ -171,5 +176,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 </body>
+
+
+
 
 </html>
