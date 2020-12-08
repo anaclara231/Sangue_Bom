@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <title>Sangue Bom</title>
 
@@ -17,16 +18,16 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/perfil.css">
 
 </head>
 <style>
 
 </style>
-
 <body id="page-top">
 
     <!-- Page Wrapper -->
-    <div id="wrapper">
+    <div id="wrapper" style="background-color: pink;">
 
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: pink;">
@@ -117,110 +118,132 @@
                 <!-- Conteudo -->
                 <!-- Dica de saude -->
                 <div class="row" style="padding: 3%; width: 100%;">
-                    <table style="width: 50%;">
-                        <tr>
-                            <td>
-                                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="container-fluid">
+
+                        <!-- Page Heading -->
+                        
+
+                        <!-- DataTales Example -->
+                        
+                        <div class="card shadow mb-4" style="width: 100%;">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">Seus Dados</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <?php
+                                    
+                                  
+                                    echo '
                                     <div class="card border-left-primary shadow h-100 py-2">
                                         <div class="card-body">
                                             <div class="row no-gutters align-items-center">
-                                                <div class="col mr-2">
-                                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                        <h6><b>Dica de saúde </b></h6>
-                                                    </div>
-                                                    <div class="h7 mb-0  text-gray-800">
-                                                        <p style="font-size:13pt; text-align: justify;">Cuidar daquilo que você coloca no prato é uma das dicas de saúde mais importantes. </p>
-                                                    </div>
+                                                    <table class="dados">
+                                                        <thead class="dados">
+                                                            <img id="imga" src="img/perfil.jpg" width="20%" height="20%">
+                                                            <tr>
+                                                                <th><strong>Nome</strong>: </th>
+                                                                <th><strong>Sobrenome:</strong>   </th>                                                  </tr>
+                                                            <tr>
+                                                                <th><strong>CPF:</strong> </th>
+                                                                <th><strong>RG:</strong> </th>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <th><strong>Email:</strong> </th>
+                                                                <th><strong>Tipo de Sangue:</strong> </th>                                                                                                             </tr>
+                                                        </thead>
+            
+                                                    </table>
                                                 </div>
                                             </div>
+                                           
                                         </div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="col-xl-3 col-md-6 mb-4">
-                                    <div class="card border-left-primary shadow h-100 py-2">
-                                        <div class="card-body">
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col mr-2">
-                                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                        <h6><b>Histórico </b></h6>
-                                                    </div>
-                                                    <div class="h7 mb-0  text-gray-800">
-                                                        <p style="font-size:13pt; text-align: justify;"> A sua última doação foi realizada no <b>Hospital Albert Einstein, no dia 16/11/2020.</b></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" style="padding-right: 3%;" style="padding-left: 3%;">
-                                <div class="card shadow mb-4">
-                                    <div class="card-header py-3">
-                                        <h6 class="m-0 font-weight-bold text-primary">Meta</h6>
-                                    </div>
+                                    
+                                    
                                     <div class="card-body">
-                                        <h5 class=" font-weight-bold">Quantidade de litros alcançados </h5>
-                                        <p>Nós temos a pretenção de alcançar até 1000L de sangue!</p>
+                                    
+                                        <h5 class=" font-weight-bold">Número de Doações </h5>
+                                        <p>Você doou: </p>
                                         <div class="progress mb-4">
-                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                             <div class="progress-bar bg-danger" role="progressbar"  style="width: 30%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">1 vez </div>
                                         </div>
+                                        <h5 class=" font-weight-bold">Ultima Doação </h5>
+                                        <p>Sua ultima doação foi a: </p>
+                                        <div class="progress mb-4">
+                                             <div class="progress-bar bg-danger" role="progressbar"  style="width: 66%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"> 2 Mês</div>
+                                        </div>
+                                        </div>
+                                        
+                                        <div class="card-body"><h5 class=" font-weight-bold"> Endereço</h5>
+                                        <p>Seus dados de localização: </p>
+                                        <div class="row no-gutters align-items-center" >
+                                            
+                                            <div class="card border-left-primary shadow h-100 py-2" style="width:60%">
+                                            
+                                                <table class="dados1">
+                                                    <thead>
+                                                
+                                                        <tr>
+                                                            <th scope="col"><strong>CEP:</strong></th>
+                                                            <th scope="col"><strong>Cidade:</strong></th>
+                                                            <th scope="col"><strong>Estado:</strong</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="col"><strong>Rua:</strong></th>
+                                                            <th scope="col"><strong>Bairro:</strong></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="col"><strong>Número:</strong></th>
+                                                            <th scope="col"><strong>Complemento:</strong></th>
+                                                        </tr>
+                                                    </thead>
+                                                
+                                            </div>
+                                        </div>
+                                        </div>
+                                        
+                                        
                                     </div>
+                                                
+                                    ';?>
                                 </div>
-                </div>
-                </td>
-                </tr>
-                </table>
-
-
-                <!-- Dica de saude -->
-
-
-                <!-- Dica de saude -->
-                <div class="card shadow mb-4" style="width: 50%; float: right; height: 100%;">
-                    <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Agende a sua doação</h6>
-                    </div>
-                    <div class="card-body">
-                        <div class="text-center">
-                            <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" width="45%" height="45%" src="img/luizinho3.png" alt="">
+                            </div>
                         </div>
-                        <p>Doar sangue é mais que um ato de amor. Trata-se de solidariedade e civismo, coisas que se encontram no sangue do doador. Aqui agende a data, hora e local da sua próxima doação de sangue!</p>
-                        <a href="agenda.html"><button class="button2">Agendamento &rarr;</button></a>
-                    </div>
+                        
+                        
+                        
+
+                    
                 </div>
-                <!-- Dica de saude -->
 
-                <!-- Meta -->
 
-                <!-- Meta -->
 
             </div>
 
+            <!-- Bootstrap core JavaScript-->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+            <!-- Core plugin JavaScript-->
+            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-        </div>
+            <!-- Custom scripts for all pages-->
+            <script src="js/sb-admin-2.min.js"></script>
 
-        <!-- Bootstrap core JavaScript-->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <!-- Page level plugins -->
+            <script src="vendor/chart.js/Chart.min.js"></script>
 
-        <!-- Core plugin JavaScript-->
-        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-        <!-- Custom scripts for all pages-->
-        <script src="js/sb-admin-2.min.js"></script>
-
-        <!-- Page level plugins -->
-        <script src="vendor/chart.js/Chart.min.js"></script>
-
-        <!-- Page level custom scripts -->
-        <script src="js/demo/chart-area-demo.js"></script>
-        <script src="js/demo/chart-pie-demo.js"></script>
-
+            <!-- Page level custom scripts -->
+            <script src="js/demo/chart-area-demo.js"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+            <script src="js/demo/chart-pie-demo.js"></script>
+            <script>
+                $('#myModal').on('shown.bs.modal', function() {
+                    $('#myInput').trigger('focus')
+                })
+            </script>
 </body>
 
 </html>

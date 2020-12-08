@@ -1,0 +1,32 @@
+#imga {
+    border-radius: 50%;
+    border: 2px solid #D61010;
+}
+
+.dados {
+    margin-left: 0px;
+    text-align: justify;
+}
+
+.dados1 {
+    text-align: justify;
+}
+
+tr {
+    margin-left: 50px;
+}
+
+th {
+    padding-left: 80px;
+    padding-bottom: 10px;
+}
+
+#grafico {
+    width: 100px;
+    margin-left: 90%;
+}
+
+#grafico>th {
+    width: 50px;
+    border: #D61010 solid 50px;
+}
