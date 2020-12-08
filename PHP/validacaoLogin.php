@@ -12,8 +12,8 @@ session_start();
 $_SESSION['emailusuario'] = $resultado['email_usuario'];
 $_SESSION['senhausuario'] = $resultado['senha_usuario'];
 
-if ($resultado){
-   header('location:../dashboard.php');
+if ($resultado){ 
+   header('location:../inicio.php');
 }else{
     $_SESSION['msg'] = "Login ou senha incorretos!";
     header('location:../login.php');
