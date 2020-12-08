@@ -121,21 +121,22 @@
                         <h1 class="h3 mb-2 text-gray-800">Agenda</h1>
                         <p class="mb-4">Aqui é onde você vai se organizar para fazer suas doações, e claro sempre respietando a restrições da OMS, onde a doação só pode ocorrer de três em três meses. </p>
                     </div>
+                    <!-- Inicio do Form -->
+                    <form action="PHP/agendamento.php" method="POST">
                     <div class="col-xl-3 col-md-6 mb-4">
                         <div class="card border-left-primary shadow h-100 py-2">
                             <div class="card-body">
                                 <div class="row no-gutters align-items-center">
                                     <div class="col mr-2">
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                            <h6><b>Tipo de doação </b></h6>
+                                            <h6><b>Tipo de doação</b></h6>
                                         </div>
                                         <div class="h7 mb-0  text-gray-800">
                                             <div class="campo">
                                                 <p style="font-size:13pt; text-align: left;">Que tipo de doação você deseja realizar: </p>
-                                                <select name="data" id="data" style="width: 90%;">
-                                                    <option value="">--</option>
-                                                    <option value="PR">Hemocentro de São Paulo</option>
-                                                    <option value="PR">Hospital Albert Einsten</option>
+                                                <select name="tipo" id="tipo" style="width: 90%;">
+                                                    <option value="Sangue_Total">Doação sangue total</option>
+                                                    <option disabled>Plaquetas(em breve)</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -155,9 +156,9 @@
                                         <div class="h7 mb-0  text-gray-800">
                                             <div class="campo">
                                                 <p style="font-size:13pt; text-align: left;">Esses são locais disponiveis: </p>
-                                                <select name="data" id="data" style="width: 90%;">
+                                                <select name="local" id="local" style="width: 90%;">
                                                     <option value="">--</option>
-                                                    <option value="PR">Hemocentro de São Paulo</option>
+                                                    <option value="1">Albert Einstein</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -172,14 +173,12 @@
                                 <div class="row no-gutters align-items-center">
                                     <div class="col mr-2">
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                            <h6><b>Data </b></h6>
+                                            <h6><b>Data</b></h6>
                                         </div>
                                         <div class="h7 mb-0  text-gray-800">
                                             <div class="campo">
                                                 <p style="font-size:13pt; text-align: left;">Esses são dias disponiveis: </p>
-                                                <select name="dia" id="dia" style="width: 90%;">
-                                                    <option value="">--</option>
-                                                    <option value="PR">12-01-2021</option>
+                                                <input type="date" name="dia" id="dia" style="width: 90%;">
                                                 </select>
                                             </div>
                                         </div>
@@ -199,10 +198,31 @@
                                         <div class="h7 mb-0  text-gray-800">
                                             <div class="campo">
                                                 <p style="font-size:13pt; text-align: left;">Esses são horarios disponiveis: </p>
-                                                <select name="data" id="data" style="width: 90%;">
-                                                    <option value="">--</option>
-                                                    <option value="PR">10:00</option>
-                                                </select>
+                                                <select name="horario" id="horario" style="width: 90%;">
+                                                    <option>--</option>
+                                                    <option>10:00</option>
+                                                    <option value="09:00">09:00</option>
+                                                    <option value="09:30">09:30</option>
+                                                    <option value="10:00">10:00</option>
+                                                    <option value="10:30">10:30</option>
+                                                    <option value="11:00">11:00</option>
+                                                    <option value="11:30">11:30</option>
+                                                    <option value="12:00">12:00</option>
+                                                    <option value="12:30">12:30</option>
+                                                    <option value="13:00">13:00</option>
+                                                    <option value="13:30">13:30</option>
+                                                    <option value="14:00">14:00</option>
+                                                    <option value="14:30">14:30</option>
+                                                    <option value="15:00">15:00</option>
+                                                    <option value="15:30">15:30</option>
+                                                    <option value="16:00">16:00</option>
+                                                    <option value="16:30">16:30</option>
+                                                    <option value="17:00">17:00</option>
+                                                    <option value="17:30">17:30</option>
+                                                    <option value="18:00">18:00</option>
+                                                    <option value="18:30">18:30</option>
+                                                </select>  
+                                                <input type="submit" value="enviar">
                                             </div>
                                         </div>
                                     </div>
@@ -215,6 +235,10 @@
                 </div>
             </div>
         </div>
+         </form>
+           <!-- Fim do form -->
+
+
         <!-- /.container-fluid -->
         <!-- Dica de saude -->
 

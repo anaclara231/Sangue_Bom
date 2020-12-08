@@ -87,7 +87,6 @@ $registro = mysqli_fetch_array($resultadoSelect);
 
 $idUsuario = $registro[0];
 
-
 $insertLogin = "INSERT INTO tbl_login_usuario(id_usuario, email_usuario, senha_usuario) 
 VALUES('$idUsuario', '$email', '$senha')";
 
