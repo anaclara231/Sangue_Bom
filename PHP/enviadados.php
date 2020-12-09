@@ -103,7 +103,7 @@ VALUES('$idUsuario','$telefoneBanco', 1)";
 $resultadoInsert3=mysqli_query($strcon, $insertTelefone) or die ("Erro no retorno de dados3");
 
 echo "<script>
-window.location.href='../login.html'
+window.location.href='../login.php'
 </script>";
 }
 }else echo "CPF ou Email nao validado.";
