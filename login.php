@@ -10,6 +10,7 @@ session_start();
     
     <title>Login </title>
     <meta charset="utf-8">
+    <link rel="icon" type="image/jpg" href="img/logo.png" />
     <link rel="stylesheet" href="CSS/cadastro.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

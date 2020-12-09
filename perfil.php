@@ -2,13 +2,17 @@
 <html lang="en">
 
 <head>
+    <?php 
+    session_start();
 
+    ?>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="icon" type="image/jpg" href="img/logo.png" />
 
     <title>Sangue Bom</title>
 
@@ -142,16 +146,16 @@
                                                         <thead class="dados">
                                                             <img id="imga" src="img/perfil.jpg" width="20%" height="20%">
                                                             <tr>
-                                                                <th><strong>Nome</strong>: </th>
-                                                                <th><strong>Sobrenome:</strong>   </th>                                                  </tr>
+                                                                <th><strong>Nome: </strong>'.$_SESSION['nome'].'</th>
+                                                                <th><strong>Sobrenome: </strong>'.$_SESSION['sobrenome'].'</th>                                                  </tr>
                                                             <tr>
-                                                                <th><strong>CPF:</strong> </th>
-                                                                <th><strong>RG:</strong> </th>
+                                                                <th><strong>CPF: </strong>'.$_SESSION['cpf'].' </th>
+                                                                <th><strong>RG: </strong>'.$_SESSION['rg'].' </th>
 
                                                             </tr>
                                                             <tr>
-                                                                <th><strong>Email:</strong> </th>
-                                                                <th><strong>Tipo de Sangue:</strong> </th>                                                                                                             </tr>
+                                                                <th><strong>Email: </strong>'.$_SESSION['emailusuario'].'</th>
+                                                                <th><strong>Tipo de Sangue: </strong>'.$_SESSION['sangue'].'</th>                                                                                                             </tr>
                                                         </thead>
             
                                                     </table>
@@ -185,17 +189,17 @@
                                                     <thead>
                                                 
                                                         <tr>
-                                                            <th scope="col"><strong>CEP:</strong></th>
-                                                            <th scope="col"><strong>Cidade:</strong></th>
-                                                            <th scope="col"><strong>Estado:</strong</th>
+                                                            <th scope="col"><strong>CEP: </strong>'.$_SESSION['cep'].'</th>
+                                                            <th scope="col"><strong>Cidade: </strong>'.$_SESSION['cidade'].'</th>
+                                                            <th scope="col"><strong>Estado:</strong>'.$_SESSION['estado'].'</th>
                                                         </tr>
                                                         <tr>
-                                                            <th scope="col"><strong>Rua:</strong></th>
-                                                            <th scope="col"><strong>Bairro:</strong></th>
+                                                            <th scope="col"><strong>Rua:</strong>'.$_SESSION['rua'].'</th>
+                                                            <th scope="col"><strong>Bairro:</strong>'.$_SESSION['bairro'].'</th>
                                                         </tr>
                                                         <tr>
-                                                            <th scope="col"><strong>Número:</strong></th>
-                                                            <th scope="col"><strong>Complemento:</strong></th>
+                                                            <th scope="col"><strong>Número:</strong>'.$_SESSION['numero'].'</th>
+                                                            <th scope="col"><strong>Complemento:</strong>'.$_SESSION['complemento'].'</th>
                                                         </tr>
                                                     </thead>
                                                 
