@@ -145,6 +145,7 @@
                                                     <table class="dados">
                                                         <thead class="dados">
                                                             <img id="imga" src="img/perfil.jpg" width="20%" height="20%">
+                                                            <p id="medalha">teste</p>
                                                             <tr>
                                                                 <th><strong>Nome: </strong>'.$_SESSION['nome'].'</th>
                                                                 <th><strong>Sobrenome: </strong>'.$_SESSION['sobrenome'].'</th>                                                  </tr>

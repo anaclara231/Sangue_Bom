@@ -2,7 +2,12 @@
 <html lang="en">
 
 <head>
+    <?php
+    session_start();
+    session_destroy();
 
+
+    ?>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -195,20 +200,25 @@
                                 </div>
                                 <div class="modal-body">
                                     <ol style="text-align: justify; padding: 4%;">
-                                        <li><b>Cadastro do Doador</b></li>
-                                        O processo de doação se inicia na recepção é realizado o cadastro do doador mediante a apresentação de documento oficial com foto.
+                                        <li><b>Saúde</b></li>
+                                        Estar em boas condições de saúde.
 
                                         <li><b>Triagem Hematológica</b></li>
-                                        Nesta etapa é realizado teste de hemoglobina para identificar a anemia, também são verificados os sinais vitais do doador
+                                        Ter entre 16 e 69 anos, desde que a primeira doação tenha sido feita até 60 anos (menores de 18 anos, clique para ver documentos necessários e formulário de autorização).
 
                                         <li><b>Triagem Clínica</b></li>
-                                        O doador passa por uma entrevista com um profissional capacitado para avaliar seus hábitos comportamentais e suas condições de saúde. Este é um momento muito importante para que a doação seja segura.
+                                        Pesar no mínimo 50kg.
 
                                         <li><b>Coleta de Sangue-Doação propriamente dita</b></li>
-                                        Depois de constatar que o voluntário está apto a doar, é realizada uma coleta de sangue. O doador é posicionado em uma cadeira semi-sentado, uma veia de um dos braços é puncionada e a coleta é realizada numa bolsa plástica que contém uma solução anticoagulante
+                                        Estar descansado (ter dormido pelo menos 6 horas nas últimas 24 horas).
 
                                         <li><b>Lanche</b></li>
-                                        O lanche é servido após a doação para repor as necessidades nutricionais imediatas do doador, o mais importante é a reposição líquida. Nesse momento, é necessário permanecer no mínimo 15 minutos .
+                                        Estar alimentado (evitar alimentação gordurosa nas 4 horas que antecedem a doação).
+
+                                        <li><b>Lanche</b></li>
+                                        Apresentar documento original com foto recente, que permita a identificação do candidato, emitido po
+                                        por órgão oficial (Carteira de Identidade, Cartão de Identidade de Profissional Liberal, Carteira de Trabalho e Previdência Social, Carteira Nacional de Habilitação e RNE-Registro Nacional de Estrangeiro*).
+                                        
                                     </ol>
                                 </div>
                                 <div class="modal-footer">
@@ -305,7 +315,7 @@
                             <div class="modal-body">
                                 <ol style="text-align: justify; padding: 4%;">
                                     <li><b>Cadastro do Doador</b></li>
-                                    O processo de doação se inicia na recepção é realizado o cadastro do doador mediante a apresentação de documento oficial com foto.
+                                    Estar em boas condições de saúde.
 
                                     <li><b>Triagem Hematológica</b></li>
                                     Nesta etapa é realizado teste de hemoglobina para identificar a anemia, também são verificados os sinais vitais do doador

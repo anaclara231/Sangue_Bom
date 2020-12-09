@@ -30,3 +30,10 @@ th {
     width: 50px;
     border: #D61010 solid 50px;
 }
+
+#medalha {
+    margin-top: 20px;
+    margin-right: 10px;
+    color: blue;
+    position: absolute;
+}

@@ -1,5 +1,6 @@
 <?php
 include_once('conexao.php');
+include_once('mapsApi.php');
 
 $emailLogin = $_POST['EMAIL_USUARIO'];
 $senhaLogin = $_POST['SENHA_USUARIO'];
@@ -28,7 +29,7 @@ $sangueUsuario = mysqli_fetch_array($sqlSangue);
 // resultado (tabela de login do usuario) |  resultado2 (tabela de usuario) | resultado3 (tabela de endereço do usario)
 
 //pegando informações de endereço do usuario 
-$selectEndereco = "SELECT id_usuario, cep, estado, cidade, bairro, complemento, rua, numero FROM tbl_endereco_usuario";
+$selectEndereco = "SELECT id_usuario, cep, estado, cidade, bairro, complemento, rua, numero FROM tbl_endereco_usuario WHERE id_usuario = '$id_usuario'";
 $sql2 = mysqli_query($strcon, $selectEndereco);
 $resultado3 = mysqli_fetch_array($sql2);
 
@@ -48,7 +49,23 @@ if ($resultado){
     $_SESSION['complemento'] = $resultado3['complemento'];
     $_SESSION['rua'] = $resultado3['rua'];
     $_SESSION['numero'] = $resultado3['numero'];
-    header('location:../inicio.php');
+
+    $hospitais = "SELECT * FROM tbl_hospital";
+    $sql = mysqli_query($strcon,$hospitais);
+    $teste4 = mysqli_fetch_all($sql);
+
+    for ($i = 0; $i < 1; $i++){
+        foreach($teste4 as $valor):{
+            echo $valor[1].'<br>';
+        }
+        endforeach;
+    }
+    $distance = getDistance($hospital[0], $resultado3['rua'], "K");
+
+    echo $distance;
+    
+
+        $enderecos = "SELECT * FROM tbl_endereco_hospital";
 }else{
     $_SESSION['msg'] = "Login ou senha incorretos!";
     session_destroy();

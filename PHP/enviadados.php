@@ -1,5 +1,4 @@
 <?php
-include('validacpf.php');
 
 include_once('conexao.php');
 //capturando os dados da tabela usuario + login

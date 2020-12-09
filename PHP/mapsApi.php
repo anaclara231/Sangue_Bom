@@ -2,7 +2,7 @@
 
 function getDistance($addressFrom, $addressTo, $unit = ''){
    // Google API key
-   $apiKey = '';
+   $apiKey = 'AIzaSyBJJugtGZ5JuS1e2RrUQoorWzYcFLlSO9k';
    
    // Mudando o formato do endereço
    $formattedAddrFrom    = str_replace(' ', '+', $addressFrom);
@@ -44,11 +44,4 @@ function getDistance($addressFrom, $addressTo, $unit = ''){
    }
 }
 
-
-   $address_1 = $_POST['endereco1'];
-   $address_2 = $_POST['endereco2'];
-
-   $distance = getDistance($address_1, $address_2, "K");
-   
-   echo $distance;
 ?>
