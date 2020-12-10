@@ -1,6 +1,6 @@
 class util {
 
-    static validaData(dataRecebida){
+    static validaDataa(dataRecebida){
         var dataAux = dataRecebida.split("/");
 //        var ano = parseInt(dataAux[2]);
 //        var mes = parseInt(dataAux[1]);

@@ -1,6 +1,7 @@
 <?php
 
 include_once('conexao.php');
+include_once('validacpf.php');
 //capturando os dados da tabela usuario + login
 $nome=$_POST['NOME_USUARIO'];
 $sobrenome=$_POST['SOBRENOME_USUARIO'];
@@ -42,23 +43,12 @@ $selectVerify2 = mysqli_query($strcon, $cpfVerify);
 $verifyEmail= mysqli_fetch_array($selectVerify1);
 $verifyCPF= mysqli_fetch_array($selectVerify2);
 
-session_start();
-$_SESSION['verificacaocpf'] = $verifyCPF['cpf'];
+
 
 
 // Se já existir algum dos dados, retornar mensagem de erro. Caso contrário, cadastrar o usuario // 
-if($verifyEmail) {
-    die("O email".$verifyEmail[0]."já existe!");
-}else{
-    $emailIsValid = true;
-}
-if($VerifyCPF) {
-    die("O cpf".$verifyCPF[0]."já existe!");
-}else{
-    $cpfIsValid = true;
-}
 
-if ($cpfIsValid and $emailIsValid){
+
 
     if(!$strcon){
         die("conexão falhou: ".mysqli_connect_error());
@@ -105,6 +95,5 @@ echo "<script>
 window.location.href='../login.php'
 </script>";
 }
-}else echo "CPF ou Email nao validado.";
-    mysqli_close($strcon);
+
 ?>

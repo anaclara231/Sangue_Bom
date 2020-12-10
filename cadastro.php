@@ -4,16 +4,9 @@
 
 <head>
     <?php
-
     session_start();
-    $cpf = $_SESSION['verificacaocpf'];
-    if($cpf){
-        $cpfexiste = "CPF já cadastrado!";
-    }else{
-        $cpfexiste= "";
-    };
     ?>
-    <title>Sangue Bom </title>
+    <title>Sangue Bom</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="CSS/cadastro.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap" rel="stylesheet">
@@ -67,11 +60,12 @@
             <header class="campo">
                 <label for="nome">CPF</label>
                 <input type="text" id="CPF" name="CPF" autocomplete="off" maxlength="14" required>
-                <p><?php 
-                
-                echo $cpfexiste;
-                
-                ?></p>
+                <?php
+                if(isset($_SESSION['msg'])){
+                echo $_SESSION['msg'];
+                unset($_SESSION['msg']);
+                }
+                ?>
             </header>
             <header class="campo">
                 <label for="snome">RG</label>

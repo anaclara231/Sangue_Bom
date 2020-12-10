@@ -50,10 +50,9 @@ if ($resultado){
     $_SESSION['rua'] = $resultado3['rua'];
     $_SESSION['numero'] = $resultado3['numero'];
     header('location:../inicio.php');
-
+    
 }else{
     $_SESSION['msg'] = "Login ou senha incorretos!";
-    session_destroy();
     header('location:../login.php');
 }
 
