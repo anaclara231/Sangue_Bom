@@ -192,7 +192,7 @@
                             <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" width="45%" height="45%" src="img/luizinho3.png" alt="">
                         </div>
                         <p>Doar sangue é mais que um ato de amor. Trata-se de solidariedade e civismo, coisas que se encontram no sangue do doador. Aqui agende a data, hora e local da sua próxima doação de sangue!</p>
-                        <a href="agenda.html"><button class="button2">Agendamento &rarr;</button></a>
+                        <a href="agenda.php"><button class="button2">Agendamento &rarr;</button></a>
                     </div>
                 </div>
                 <!-- Dica de saude -->

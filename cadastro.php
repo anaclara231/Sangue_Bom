@@ -5,6 +5,7 @@
 <head>
     <?php
     session_start();
+    session_destroy();
     ?>
     <title>Sangue Bom</title>
     <meta charset="utf-8">

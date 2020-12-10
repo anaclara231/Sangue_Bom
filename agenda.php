@@ -201,7 +201,6 @@
                                                 <p style="font-size:13pt; text-align: left;">Esses são horarios disponiveis: </p>
                                                 <select name="horario" id="horario" style="width: 90%;">
                                                     <option>--</option>
-                                                    <option>10:00</option>
                                                     <option value="09:00">09:00</option>
                                                     <option value="09:30">09:30</option>
                                                     <option value="10:00">10:00</option>

@@ -82,11 +82,9 @@ class util {
 document.getElementById('#data')
 if (util.validaData('21/13/2004') ){
     console.log('Validado!');
-    document.write('VALIDADO');
 }
 else{
-    console.log('NÃO VALIDADO!');
-    document.write('NÃO VALIDADO!');    
+    console.log('NÃO VALIDADO!');   
 }
 
 
