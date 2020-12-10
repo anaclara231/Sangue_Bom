@@ -152,14 +152,14 @@
                                                       </button>
                                                 
                                                             <tr>
-                                                            <th><strong>Seu atual level é:</strong> Doador amigo'.$_SESSION['nome'].'
+                                                            <th><strong>Seu atual level é:</strong> Doador amigo
                                                            
                                                     
                                                             </th>
                                                             </tr>
                                                           
                                                             <tr>
-                                                            <th><strong>Sua atual posição no ranking é de:</strong>'.$_SESSION['nome'].'
+                                                            <th><strong>Sua posição no ranking é:</strong> 20º
                                                             </th>
                                                             </tr>
                                               
@@ -237,15 +237,15 @@
                                                         <tr>
                                                             <th scope="col"><strong>CEP: </strong>'.$_SESSION['cep'].'</th>
                                                             <th scope="col"><strong>Cidade: </strong>'.$_SESSION['cidade'].'</th>
-                                                            <th scope="col"><strong>Estado:</strong>'.$_SESSION['estado'].'</th>
+                                                            <th scope="col"><strong>Estado: </strong>'.$_SESSION['estado'].'</th>
                                                         </tr>
                                                         <tr>
-                                                            <th scope="col"><strong>Rua:</strong>'.$_SESSION['rua'].'</th>
-                                                            <th scope="col"><strong>Bairro:</strong>'.$_SESSION['bairro'].'</th>
+                                                            <th scope="col"><strong>Rua: </strong>'.$_SESSION['rua'].'</th>
+                                                            <th scope="col"><strong>Bairro: </strong>'.$_SESSION['bairro'].'</th>
                                                         </tr>
                                                         <tr>
-                                                            <th scope="col"><strong>Número:</strong>'.$_SESSION['numero'].'</th>
-                                                            <th scope="col"><strong>Complemento:</strong>'.$_SESSION['complemento'].'</th>
+                                                            <th scope="col"><strong>Número: </strong>'.$_SESSION['numero'].'</th>
+                                                            <th scope="col"><strong>Complemento: </strong>'.$_SESSION['complemento'].'</th>
                                                         </tr>
                                                     </thead>
                                                 

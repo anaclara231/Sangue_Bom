@@ -49,23 +49,8 @@ if ($resultado){
     $_SESSION['complemento'] = $resultado3['complemento'];
     $_SESSION['rua'] = $resultado3['rua'];
     $_SESSION['numero'] = $resultado3['numero'];
+    header('location:../inicio.php');
 
-    $hospitais = "SELECT * FROM tbl_hospital";
-    $sql = mysqli_query($strcon,$hospitais);
-    $teste4 = mysqli_fetch_all($sql);
-
-    for ($i = 0; $i < 1; $i++){
-        foreach($teste4 as $valor):{
-            echo $valor[1].'<br>';
-        }
-        endforeach;
-    }
-    $distance = getDistance($hospital[0], $resultado3['rua'], "K");
-
-    echo $distance;
-    
-
-        $enderecos = "SELECT * FROM tbl_endereco_hospital";
 }else{
     $_SESSION['msg'] = "Login ou senha incorretos!";
     session_destroy();
