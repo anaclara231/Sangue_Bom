@@ -12,6 +12,35 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+.fa {
+    padding: 1px;
+    font-size: 100px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+    background: #D61010;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #D61010;
+    color: white;
+}
+
 .button2 {
     width: 180px;
     height: 30px;
@@ -23,6 +52,30 @@
     text-decoration: none;
     float: left;
     margin-top: 2%;
+}
+
+.bola {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #D61010;
+    border: 2px #D61010;
+    color: #ffffff;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    float: left;
+}
+
+.bola1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #dadada;
+    border: 2px #D61010;
+    color: #ffffff;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    float: left;
 }
 
 .button2:hover {

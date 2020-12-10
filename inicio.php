@@ -169,7 +169,7 @@
                                         <h5 class=" font-weight-bold">Quantidade de litros alcançados </h5>
                                         <p>Nós temos a pretenção de alcançar até 1000L de sangue!</p>
                                         <div class="progress mb-4">
-                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"> 10L</div>
                                         </div>
                                     </div>
                                 </div>

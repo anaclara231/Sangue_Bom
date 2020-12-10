@@ -129,37 +129,47 @@
 
                         <!-- DataTales Example -->
                         
-                        <div class="card shadow mb-4" style="width: 100%;">
-                            <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">Seus Dados</h6>
-                            </div>
+                        <div class="row" style="padding: 3%; width: 100%;">
+                    <div class="container-fluid">
+                        <h1 class="h3 mb-2 text-gray-800">Perfil</h1>
+                        <p class="mb-4">Suas informações estão nesta aba. Aqui você pode ver sua atual posição no Ranking e o seus título de doador.  </p>
+                    </div>
                             <div class="card-body">
                                 <div class="table-responsive">
                                     <?php
                                     
                                   
                                     echo '
-                                    <div class="card border-left-primary shadow h-100 py-2">
-                                        <div class="card-body">
-                                            <div class="row no-gutters align-items-center">
+                                    <div class="card border-bottom-danger shadow h-100 py-2" style="width: 100%; margin: 0 auto;">
+                                        <div class="card-body" >
+                                            <div class="row no-gutters align-items-center" style="padding: 3%; ">
                                                     <table class="dados">
                                                         <thead class="dados">
-                                                            <img id="imga" src="img/perfil.jpg" width="20%" height="20%">
-                                                            <p id="medalha">teste</p>
+                                                        <button class="bola">
+                                                        <svg width="50%" height="50%" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                                            </svg>
+                                                      </button>
+                                                
                                                             <tr>
-                                                                <th><strong>Nome: </strong>'.$_SESSION['nome'].'</th>
-                                                                <th><strong>Sobrenome: </strong>'.$_SESSION['sobrenome'].'</th>                                                  </tr>
-                                                            <tr>
-                                                                <th><strong>CPF: </strong>'.$_SESSION['cpf'].' </th>
-                                                                <th><strong>RG: </strong>'.$_SESSION['rg'].' </th>
-
+                                                            <th><strong>Seu atual level é:</strong> Doador amigo
+                                                           
+                                                    
+                                                            </th>
                                                             </tr>
+                                                          
                                                             <tr>
-                                                                <th><strong>Email: </strong>'.$_SESSION['emailusuario'].'</th>
-                                                                <th><strong>Tipo de Sangue: </strong>'.$_SESSION['sangue'].'</th>                                                                                                             </tr>
+                                                            <th><strong>Sua posição no ranking é:</strong> 20º
+                                                            </th>
+                                                            </tr>
+                                              
                                                         </thead>
-            
+                                                     
                                                     </table>
+                                                    <button class="bola" style="width: 120px; height:120px;  background: #ffffff; color: #D61010; margin-left: 20%;" >
+                                                    <img src="IMG/medalha2.png"  width="90%" height="100%">
+                      </svg>
+                                                  </button>
                                                 </div>
                                             </div>
                                            
@@ -180,27 +190,62 @@
                                         </div>
                                         </div>
                                         
-                                        <div class="card-body"><h5 class=" font-weight-bold"> Endereço</h5>
+                                        <div class="card-body"><h5 class=" font-weight-bold"> Dados</h5>
+                                        <p>Suas informações: </p>
+                                        <div class="row no-gutters align-items-center" >
+                                            
+                                            <div class="card border-left-primary shadow h-100 py-2" style="width:100%" >
+                                            <div class="row no-gutters align-items-center" >
+                                            <table class="dados" style="width:100%" >
+                                                <thead class="dados">
+                                               
+                                                    <tr>
+                                                        <th><strong>Nome: </strong>'.$_SESSION['nome'].'</th>
+                                                        <th><strong>Sobrenome: </strong>'.$_SESSION['sobrenome'].'</th>      
+                                                        <th><strong></th> 
+                                                        </tr>
+                                                    <tr>
+                                                        <th><strong>CPF: </strong>'.$_SESSION['cpf'].' </th>
+                                                        <th><strong>RG: </strong>'.$_SESSION['rg'].' </th>
+                                                        <th><strong></th> 
+                                                    </tr>
+                                                    <tr>
+                                                        <th><strong>Email: </strong>'.$_SESSION['emailusuario'].'</th>
+                                                        <th><strong>Tipo de Sangue: </strong>'.$_SESSION['sangue'].'</th>     
+                                                        <th><strong></th>                                                                                                         </tr>
+                                                </thead>
+    
+                                            </table>
+                                        </div>
+                                                
+                                            </div>
+                                        </div>
+                                        </div>
+                                        
+                                        
+                                    </div>
+
+                                    <div class="card-body"><h5 class=" font-weight-bold"> Endereço</h5>
                                         <p>Seus dados de localização: </p>
                                         <div class="row no-gutters align-items-center" >
                                             
-                                            <div class="card border-left-primary shadow h-100 py-2" style="width:60%">
-                                            
-                                                <table class="dados1">
+                                            <div class="card border-left-primary shadow h-100 py-2" style="width:100%" >
+
+                                                <table class="dados1" style="padding:2%">
                                                     <thead>
                                                 
                                                         <tr>
                                                             <th scope="col"><strong>CEP: </strong>'.$_SESSION['cep'].'</th>
                                                             <th scope="col"><strong>Cidade: </strong>'.$_SESSION['cidade'].'</th>
-                                                            <th scope="col"><strong>Estado:</strong>'.$_SESSION['estado'].'</th>
+                                                            <th scope="col"><strong>Estado: </strong>'.$_SESSION['estado'].'</th>
                                                         </tr>
                                                         <tr>
-                                                            <th scope="col"><strong>Rua:</strong>'.$_SESSION['rua'].'</th>
-                                                            <th scope="col"><strong>Bairro:</strong>'.$_SESSION['bairro'].'</th>
+                                                            <th scope="col"><strong>Rua: </strong>'.$_SESSION['rua'].'</th>
+                                                            <th scope="col"><strong>Bairro: </strong>'.$_SESSION['bairro'].'</th>
                                                         </tr>
                                                         <tr>
-                                                            <th scope="col"><strong>Número:</strong>'.$_SESSION['numero'].'</th>
-                                                            <th scope="col"><strong>Complemento:</strong>'.$_SESSION['complemento'].'</th>
+                                                            <th scope="col"><strong>Número: </strong>'.$_SESSION['numero'].'</th>
+                                                            <th scope="col"><strong>Complemento: </strong>'.$_SESSION['complemento'].'</th>
                                                         </tr>
                                                     </thead>
                                                 
@@ -210,6 +255,10 @@
                                         
                                         
                                     </div>
+
+                                    
+
+                                    
                                                 
                                     ';?>
                                 </div>

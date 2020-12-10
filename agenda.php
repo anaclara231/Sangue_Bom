@@ -61,7 +61,7 @@
                     <span>Perfil</span></a>
             </li>
             <li class="nav-item" style="padding-left: 10%;">
-                <a class="nav-link" href="agenda.html">
+                <a class="nav-link" href="agenda.php">
                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
                         <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
@@ -124,7 +124,6 @@
                         <p class="mb-4">Aqui é onde você vai se organizar para fazer suas doações, e claro sempre respietando a restrições da OMS, onde a doação só pode ocorrer de três em três meses. </p>
                     </div>
                     <!-- Inicio do Form -->
-                    <form action="PHP/agendamento.php" method="POST">
                     <div class="col-xl-3 col-md-6 mb-4">
                         <div class="card border-left-primary shadow h-100 py-2">
                             <div class="card-body">
@@ -224,16 +223,17 @@
                                                     <option value="18:00">18:00</option>
                                                     <option value="18:30">18:30</option>
                                                 </select>  
-                                                <input type="submit" value="enviar">
+                                            
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                      
                     </div>
 
-
+                    <button class="button2" style="margin: 0 auto;">Agendar</button>
                 </div>
             </div>
         </div>
