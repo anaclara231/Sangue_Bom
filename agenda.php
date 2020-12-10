@@ -124,7 +124,6 @@
                         <p class="mb-4">Aqui é onde você vai se organizar para fazer suas doações, e claro sempre respietando a restrições da OMS, onde a doação só pode ocorrer de três em três meses. </p>
                     </div>
                     <!-- Inicio do Form -->
-                    <form action="PHP/agendamento.php" method="POST">
                     <div class="col-xl-3 col-md-6 mb-4">
                         <div class="card border-left-primary shadow h-100 py-2">
                             <div class="card-body">
@@ -224,16 +223,17 @@
                                                     <option value="18:00">18:00</option>
                                                     <option value="18:30">18:30</option>
                                                 </select>  
-                                                <input type="submit" value="enviar">
+                                            
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                      
                     </div>
 
-
+                    <button class="button2" style="margin: 0 auto;">Agendar</button>
                 </div>
             </div>
         </div>

@@ -154,16 +154,16 @@
                                     <ol style="text-align: justify; padding: 4%;">
                                         <li><b>Cadastro do Doador</b></li>
                                         O processo de doação se inicia na recepção é realizado o cadastro do doador mediante a apresentação de documento oficial com foto.
-
+                                        <br>
                                         <li><b>Triagem Hematológica</b></li>
                                         Nesta etapa é realizado teste de hemoglobina para identificar a anemia, também são verificados os sinais vitais do doador
-
+                                        <br>
                                         <li><b>Triagem Clínica</b></li>
                                         O doador passa por uma entrevista com um profissional capacitado para avaliar seus hábitos comportamentais e suas condições de saúde. Este é um momento muito importante para que a doação seja segura.
-
+                                        <br>
                                         <li><b>Coleta de Sangue-Doação propriamente dita</b></li>
                                         Depois de constatar que o voluntário está apto a doar, é realizada uma coleta de sangue. O doador é posicionado em uma cadeira semi-sentado, uma veia de um dos braços é puncionada e a coleta é realizada numa bolsa plástica que contém uma solução anticoagulante
-
+                                        <br>
                                         <li><b>Lanche</b></li>
                                         O lanche é servido após a doação para repor as necessidades nutricionais imediatas do doador, o mais importante é a reposição líquida. Nesse momento, é necessário permanecer no mínimo 15 minutos .
                                     </ol>
@@ -251,33 +251,38 @@
                             </button>
                                 </div>
                                 <div class="modal-body">
-                                    <ol style="text-align: justify; padding: 4%;">
-                                        <li><b>Doar engorda</b></li>
+                                    <ul style="text-align: justify; padding: 4%;">
+                                        <li><b>Doar pode prejudicar a saúde do doador </b></li>
+                                        Após uma doação, o sangue tende a voltar ao normal rapidamente e, portanto, não há fraqueza.
+                                        
+                                        <li><b> Só podem doar sangue maiores de idade </b></li>
+                                        Adolescentes de 16 e 17 anos podem doar sangue. Fisicamente eles já estão aptos para doar sangue, desde que cumpram todos os requisitos básicos para doação, mas por serem menores de 18 anos, precisam de autorização dos pais ou responsável.
+                                        
+                                        <li><b> Pessoas com menos de 50 kg não podem doar</b></li>
+                                        O peso do voluntário deve ser a partir de 50 quilos.
+
+                                        <li><b> Idosos não podem doar sangue</b></li>
+                                        Em 2013, houve aumento na idade máxima dos doadores de sangue pelo Ministério da Saúde. Atualmente, pessoas entre 16 e 69 anos podem realizar o ato de doação.
+                                        
+                                        <li><b>Doar engorda </b></li>
                                         Não engorda nem emagrece. O volume de liquido é reposto em 24 horas.
-                                        
-                                        <li><b>Não posso doar sangue após ter sido vacinado </b></li>
-                                        É recomendado levar a carteira de vacinação no dia da doação. Vacinas para hepatite B, impedem a doação por 48 horas. Já a vacina da influenza (gripe) impede a doação por quatro semanas.
-                                        
-                                        <li><b>O doador não tem risco de contagio de doenças Clínica</b></li>
+
+                                        <li><b>O doador não tem risco de contagio de doenças </b></li>
                                         Verdade, pois todo o material utilizado é descartável, não há contato com sangue de outra pessoa. 
- 
-                                        <li><b>Quem teve dengue nunca mais pode doar sangue</b></li>
-                                        Mentira. O organismo cria anticorpos contra as infecções virais e com isso o virus é neutralizado. Há um período de quarentena de um mês entre a infecção e a liberação para a doação. No caso de dengue hemorrágica, o período é de seis meses.
+
+                                        <li><b>Não posso doar sangue após ter sido vacinado  </b></li>
+                                        É recomendado levar a carteira de vacinação no dia da doação. Vacinas para hepatite B, impedem a doação por 48 horas.
+
+                                        <li><b> Quem teve dengue nunca mais pode doar sangue</b></li>
+                                        Mentira. O organismo cria anticorpos contra as infecções virais e com isso o virus é neutralizado. 
+
+                                        <li><b> O doador não vai sentir falta desse sangue no seu corpo</b></li>
+                                        A reposição do volume de plasma ocorre em 24 horas e a dos glóbulos vermelhos em 4 semanas. Entretanto, para o organismo atingir o mesmo nível de estoque de ferro que apresentava antes da doação, são necessárias 8 semanas para os homens e 12 semanas para as mulheres.
+
+                                        <li><b>Quem tem piercing e tatuagem não pode doar </b></li>
+                                        Apenas pessoas com piercing na boca não podem doar sangue pois a boca está mais receptiva a infecções. Elas só estão aptas a doar 12 meses após a retirada.
                                         
-                                        <li><b>O doador não vai sentir falta desse sangue no seu corpo</b></li>
-                                        A reposição do volume de plasma ocorre em 24 horas e a dos glóbulos vermelhos em 4 semanas. Entretanto, para o organismo atingir o mesmo nível de estoque de ferro que apresentava antes da doação, são necessárias 8 semanas para os homens e 12 semanas para as mulheres.                                    
-                                        
-                                        <li><b>Mulheres não pode doar sangue durante a menstruação</b></li>
-                                        A perda de sangue que ocorre durante a menstruação é uma perda prevista pelo corpo da mulher e seu organismo está adaptado a fazer a reposição necessária. Em cada doação de sangue são coletados em torno de 450 mL de sangue, o que corresponde menos de 10% do total de volume sanguíneo. Essas células sanguíneas doadas são repostas pelo organismo ao longo do tempo e não fará falta no desempenho das funções metabólicas da pessoa que doou. Por isso, a doação de sangue durante o período menstrual não apresenta nenhum risco à saúde da mulher. A candidata será avaliada em uma triagem que avaliará se o hematócrito está bom para a doação.
-                                        
-                                        <li><b>Doar sangue é um processo rápido, não é demorado</b></li>
-                                        Em média, na primeira doação, do momento em que doador entra no banco de sangue até o fim de todos os procedimentos, ele gasta em torno de duas horas. Nas próximas vezes, o tempo gasto é entre 60-75 minutos.                                        
-                                        
-                                        <li><b>Quem tem piercing e tatuagem não pode doar</b></li>
-                                        Apenas pessoas com piercing na boca não podem doar sangue pois a boca está mais receptiva a infecções. Elas só estão aptas a doar 12 meses após a retirada. Pessoas que fizeram tatuagem, maquiagem definitiva e outros processos com perfuração da pele devem esperar 12 meses para voltar a doar sangue.
-                                        
-                                    
-                                    </ol>
+                                    </ul>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-primary">Fechar</button>
@@ -314,20 +319,12 @@
                             </div>
                             <div class="modal-body">
                                 <ol style="text-align: justify; padding: 4%;">
-                                    <li><b>Cadastro do Doador</b></li>
-                                    Estar em boas condições de saúde.
-
-                                    <li><b>Triagem Hematológica</b></li>
-                                    Nesta etapa é realizado teste de hemoglobina para identificar a anemia, também são verificados os sinais vitais do doador
-
-                                    <li><b>Triagem Clínica</b></li>
-                                    O doador passa por uma entrevista com um profissional capacitado para avaliar seus hábitos comportamentais e suas condições de saúde. Este é um momento muito importante para que a doação seja segura.
-
-                                    <li><b>Coleta de Sangue-Doação propriamente dita</b></li>
-                                    Depois de constatar que o voluntário está apto a doar, é realizada uma coleta de sangue. O doador é posicionado em uma cadeira semi-sentado, uma veia de um dos braços é puncionada e a coleta é realizada numa bolsa plástica que contém uma solução anticoagulante
-
-                                    <li><b>Lanche</b></li>
-                                    O lanche é servido após a doação para repor as necessidades nutricionais imediatas do doador, o mais importante é a reposição líquida. Nesse momento, é necessário permanecer no mínimo 15 minutos .
+                                    <li>Uma doação de sangue pode salvar até 4 vidas</li>
+                                    <li>O doador tem direito a um dia de folga no trabalho</li>
+                                    <li>Não há risco de contrair doenças na doação de sangue</li>
+                                    <li>Seu organismo repõe rapidamente o sangue doado</li>
+                                    <li>A doação de sangue não faz ninguém engordar ou emagrecer</li>
+                                    <li>Ajudar outras pessoas faz bem para você também</li>
                                 </ol>
                             </div>
                             <div class="modal-footer">

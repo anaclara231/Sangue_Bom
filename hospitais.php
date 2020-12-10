@@ -126,9 +126,9 @@
                         <p class="mb-4">Esta é a lista de Hospitais/Hemocentros que fazem parte do Sangue Bom, todos preparados para recebrem você com o maior cuidado. Aqui você tambem pode ver qual é a Instuição mais perto da sua localização. </p>
 
                         <!-- DataTales Example -->
-                        <div class="card shadow mb-4" style="width: 75%;">
+                        <div class="card shadow mb-4" style="width: 100%;">
                             <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">Hospitais</h6>
+                                <h6 class="m-0 font-weight-bold text-primary">Hospitais com o Sangue Bom</h6>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
@@ -141,14 +141,6 @@
                                                 <th>Endereço</th>
                                             </tr>
                                         </thead>
-                                        <tfoot>
-                                            <tr>
-                                                <th>Nome</th>
-                                                <th>Endereço</th>
-                                                <th>Bairro</th>
-                                                <th>Endereço</th>
-                                            </tr>
-                                        </tfoot>
                                         <tbody>
                                             <tr>
                                                 <td>Banco de Sangue Paulista</td>

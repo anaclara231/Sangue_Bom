@@ -140,13 +140,6 @@
                                                 <th>Contribuições</th>
                                             </tr>
                                         </thead>
-                                        <tfoot>
-                                            <tr>
-                                                <th>Nome</th>
-                                                <th>Cidade</th>
-                                                <th>Contribuições</th>
-                                            </tr>
-                                        </tfoot>
                                         <tbody>
                                             <tr>
                                                 <td>Thiago Jolvino</td>
